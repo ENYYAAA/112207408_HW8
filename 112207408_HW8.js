@@ -22,8 +22,8 @@ function calculate() {
             displayResult(multiply(parsedNum1, parsedNum2));
             break;
         case "/":
-            if (parsedNum2 === 0) {
-                displayResult("Error: Division by zero.");
+            if (parsedNum2 == 0) {
+                window.alert("Error: Division by zero.");
             } else {
                 displayResult(divide(parsedNum1, parsedNum2));
             }
