@@ -13,19 +13,20 @@ function calculate() {
 
     switch (operator) {
         case "+":
-            displayResult(add(parsedNum1, parsedNum2));
+            displayResult("Result = " + add(parsedNum1, parsedNum2));
             break;
         case "-":
-            displayResult(subtract(parsedNum1, parsedNum2));
+            displayResult("Result = " + subtract(parsedNum1, parsedNum2));
             break;
         case "*":
-            displayResult(multiply(parsedNum1, parsedNum2));
+            displayResult("Result = " + multiply(parsedNum1, parsedNum2));
             break;
         case "/":
             if (parsedNum2 == 0) {
+                displayResult("Error: Division by zero.");
                 window.alert("Error: Division by zero.");
             } else {
-                displayResult(divide(parsedNum1, parsedNum2));
+                displayResult("Result = " + divide(parsedNum1, parsedNum2));
             }
             break;
         default:
